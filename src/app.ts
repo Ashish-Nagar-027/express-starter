@@ -10,7 +10,8 @@ app.use(express.json())
 app.use(express.urlencoded())
 
 
-
+// routes
+app.use('/api/v1', v1Router)
 
 
 app.get('/health', (_req ,res) => {
